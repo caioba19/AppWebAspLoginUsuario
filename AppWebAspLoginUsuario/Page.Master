@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Page.master.cs" Inherits="AppWebAspLoginUsuario.Page" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="StyleSheet.css">
+    <link rel="stylesheet" href="style.css">       
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Register.aspx">Cadastro</a>
+            <a href="Login.aspx">Login</a>
+            <a href="Dashboard.aspx">DashBoard</a>
+            <a href="Logout.aspx">Sair</a>
+       </div>
+
+       <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+       <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+       </script>
+       <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+       </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

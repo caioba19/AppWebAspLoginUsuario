@@ -1,0 +1,150 @@
+﻿/*Estilização da Pagina Mestra*/
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}
+
+/*Estiçização Página Principal*/
+
+.btn {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.info:hover {
+    background: #2196F3;
+    color: white;
+}
+
+.danger {
+    border-color: #f44336;
+    color: red;
+}
+
+    .danger:hover {
+        background: #f44336;
+        color: white;
+    }
+
+h1 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.itens {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.txtMistério {
+    display: block;
+}
+
+h1 {
+    background-color: black;
+    color: aliceblue;
+    margin-bottom: 0;
+    padding: 10px 0;
+}
+
+.itens {
+    background: #feb6b6;
+    padding: 20px 0;
+}
+
+.txtMisterio {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+
+.card-img-top {
+    max-height: 100%;
+    border: #a9a9a9 3px solid;
+    border-radius: 7px;
+}
+
+.mb-3 {
+    background: #c3c3c3;
+    display: grid;
+    grid-auto-columns: 1fr;
+    justify-items:center;
+    padding: 20px
+}
+
+.imgMisterio {
+    display: flex;
+    height: 350px;
+    width: 70%;
+    justify-content:center;
+
+}
+
+h5, .card-text {
+    text-align: center;
+}
+
+h5 {
+    font-size: 30px;
+    color: #d90707;
+    letter-spacing: 2px;
+}
+
+canvas {
+    font-size: 20px;
+}
+
+.card-text {
+    display:flex;
+    flex-wrap: wrap;
+}
+
